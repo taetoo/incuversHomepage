@@ -1,0 +1,386 @@
+:root {
+    --text-color: #F04B24;
+    --background-color: rgb(255, 255, 255, 0.5);
+    --accent-color: #f2d8d8;
+    --footer-color: darkgray;
+    --hover-color: rgb(242, 216, 216, 0.5);
+}
+
+body {
+    font-family: 'nanum-gothic', 'capitana-medium';
+    font-size: 16px;
+    line-height: 30px;
+    color: #0d1012;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.logo_text {
+    font-size: 24px;
+    font-weight: 50;
+    padding-top: 25px;
+}
+
+.navbar {
+    /* 한줄에 나란히 설정 */
+    display: flex;
+    /* 일정한 간격에 맞춰서 박스를 정렬 */
+    justify-content: space-between;
+    /* 수직 정렬 설정 */
+    align-items: center;
+    background-color: var(--background-color);
+    z-index: 10;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    padding: 8px 12px;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: white;
+    padding-left: 15px;
+    display: block;
+}
+
+.navbar_logo i {
+    color: var(--accent-color);
+}
+
+.navbar_menu {
+    display: flex;
+    /* 리스트 앞에 불릿 없애기 */
+    list-style: none;
+    padding-left: 0;
+    padding-right: 50px
+}
+
+.navbar_menu li {
+    /* 여기서 패딩으로 넣는 이유는 박스 안에 넣어서 클릭할 수 있는 영역이 커진다 */
+    padding: 8px 25px;
+}
+
+.navbar_menu li:hover {
+    background-color: var(--hover-color);
+    border-radius: 4px;
+}
+
+
+/* .navbar_links {
+    display: flex;
+    list-style: none;
+    color: var(--text-color);
+    padding-left: 0;
+
+}
+.navbar_links li {
+    padding: 8px 12px;
+
+}
+.navbar_links li:hover {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+
+
+} */
+
+
+.navbar_toggleBtn {
+    display: none;
+    position: absolute;
+    right: 50px;
+    font-size: 25px;
+    color: var(--text-color);
+    padding-top: 10px;
+
+}
+
+.navbar_toggleBtn :hover {
+    color: var(--hover-color);
+}
+
+
+.imageMain {
+    padding-top: 100px;
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+
+}
+
+
+footer {
+    display: block;
+    /* footer를 aside위에 올리기 위해 사용(부유객체) */
+    /* position: absolute; */
+    height: 100px;
+    width: 100%;
+    /* padding: 0 25px; */
+    line-height: 30spx;
+    color: #8a8c8f;
+    /* border-top: 1px solid #dee5e7; */
+    /* background-color: darkgray; */
+    bottom: 0;
+}
+
+.company_profile {
+    width: 100%;
+    padding: 147px 0;
+    background-color: #404040;
+}
+
+.company_profile h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 56px;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+.company_profile>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+}
+
+.company_profile button {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-image: url('../images/click.png');
+    background-size: contain;
+    border: none;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.download_profile {
+    display: flex;
+    align-items: center;
+
+}
+
+.download_profile p {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    color: white;
+}
+
+.company_profile .download_profile {
+    display: flex;
+    align-items: center;
+}
+
+.footer_info_section {
+    padding: 72px 0;
+    background-color: #2b2b2b;
+    height: auto;
+}
+
+.footer_info_section>div {
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer_img {
+    margin-right: 48px;
+}
+
+.footer_logo {
+    width: 240px;
+    display: block;
+    margin-bottom: 70px;
+}
+
+.company_number {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #808080;
+}
+
+.footer_contact_info {
+    display: flex;
+}
+
+.contact_detail:first-of-type {
+    margin-right: 50px;
+}
+
+.contact_detail span {
+    display: block;
+    color: #808080;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact_detail p,
+.contact_detail a {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+
+
+
+
+
+
+/* 반응형 */
+@media screen and (max-width: 758px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 50px;
+    }
+
+    .navbar_logo {
+        font-size: 24px;
+        font-weight: 50;
+        padding-top: 10px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* .navbar_links {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    } */
+
+    .navbar_toggleBtn {
+        display: flex;
+    }
+
+    .navbar_menu.active,
+    .navbar_links.active {
+        display: flex;
+    }
+
+    /* .imageMain {
+        justify-content: center;
+        width: 100%;
+    } */
+
+    .company_profile {
+        padding: 53px;
+    }
+
+    .footer_info_section {
+        padding: 53px;
+        width: 100%;
+    }
+}
+
+/* 폰트 */
+
+/* 한글 폰트 */
+@font-face {
+    font-family: nanum-gothic;
+    src: url("../fonts/nanum-gothic/NanumGothic.otf");
+    unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+    font-family: nanum-gothicBold;
+    src: url("../fonts/nanum-gothic/NanumGothicBold.otf");
+    unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+    font-family: nanum-gothicExtraBold;
+    src: url("../fonts/nanum-gothic/NanumGothicExtraBold.otf");
+    unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+    font-family: nanum-gothicLight;
+    src: url("../fonts/nanum-gothic/NanumGothicLight.otf");
+    unicode-range: U+AC00-D7A3;
+}
+
+/* 영어 폰트 */
+@font-face {
+    font-family: capitana-bold;
+    src: url("../fonts/capitana-fonts/Fontspring-DEMO-capitana-bold.otf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: capitana-semibold;
+    src: url("../fonts/capitana-fonts/Fontspring-DEMO-capitana-semibold.otf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: capitana-extrabold;
+    src: url("../fonts/capitana-fonts/Fontspring-DEMO-capitana-extrabold.otf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: capitana-extralight;
+    src: url("../fonts/capitana-fonts/Fontspring-DEMO-capitana-extralight.otf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: capitana-light;
+    src: url("../fonts/capitana-fonts/Fontspring-DEMO-capitana-light.otf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: capitana-medium;
+    src: url("../fonts/capitana-fonts/Fontspring-DEMO-capitana-medium.otf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: capitana-regular;
+    src: url("../fonts/capitana-fonts/Fontspring-DEMO-capitana-regular.otf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: capitana-thin;
+    src: url("../fonts/capitana-fonts/Fontspring-DEMO-capitana-thin.otf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
