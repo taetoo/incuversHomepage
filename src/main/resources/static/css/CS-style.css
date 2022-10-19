@@ -125,16 +125,12 @@ a {
 .navbar_toggleBtn :hover {
     color: var(--hover-color);
 }
-
-
-.imageMain {
-    padding-top: 100px;
-    margin: 0 auto;
-    display: block;
-    width: 80%;
-
+.div_test {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-top: 300px;
 }
-
 
 footer {
     display: block;

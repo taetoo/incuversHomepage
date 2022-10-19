@@ -127,14 +127,17 @@ a {
 }
 
 
+.IT_PG-main {
+    background-color: var(--background-color);
+}
 .imageMain {
     padding-top: 100px;
+    padding-bottom: 40px;
     margin: 0 auto;
     display: block;
     width: 80%;
-
+    background-color: var(--background-color);
 }
-
 
 footer {
     display: block;
