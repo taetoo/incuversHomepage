@@ -19,87 +19,88 @@
     <script src="https://kit.fontawesome.com/0d707ca2ca.js" crossorigin="anonymous"></script>
     <script src="/js/main.js" defer></script>
 </head>
-
 <!-- 불펌방지 태그 순서대로 우클릭 방지, 블록 선택 방지, 드래그 방지 -->
-
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
-    <header class="header">
-        <!-- 네비게이션바 -->
-        <nav class="navbar">
-            <!-- 로고 -->
-            <div class="navbar_logo">
-                <!-- 로고아이콘 -->
-                <i class="fa-brands fa-accusoft"></i>
-                <!-- 로고텍스트 -->
-                <a class="logo_text" href="index.html">incuvers</a>
+<header class="header">
+    <!-- 네비게이션바 -->
+    <nav class="navbar">
+        <!-- 로고 -->
+        <div class="navbar_logo">
+            <!-- 로고아이콘 -->
+            <a href="index.html"><img class="logo_image" src="/images/logo.png"></a>
+            <!-- <i href="index.html" class="navbar-left"> -->
+            <!-- <i class="fa-brands fa-accusoft"></i> -->
+            <!-- 로고텍스트 -->
+            <!-- <a class="logo_image" href="index.html"></a> -->
+            <!-- <a href="#" class="navbar-left"><img src="./images/logo.png"></a> -->
+        </div>
+
+        <!-- 메뉴바 -->
+        <ul class="navbar_menu">
+            <li><a href="about.html">about</a></li>
+            <li><a href="team.html">team</a></li>
+            <li><a href="IT_PG.html">IT/PG</a></li>
+            <li><a href="CS.html">CS</a></li>
+        </ul>
+
+
+
+
+
+
+        <!-- sns 링크 -->
+        <!-- <ul class="navbar_links">
+        <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></li></a>
+        <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.instargram.com"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul> -->
+
+        <a class="navbar_toggleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+    </nav>
+</header>
+<div id="content-wrap">
+    <image class="imageMain" src="/images/main_page.png">
+        <!-- <image class="imageMain" src="./images/test2.jpg"></image> -->
+</div>
+<footer>
+    <div class="company_profile">
+        <div>
+            <h2>인큐버스는<br>인큐버스 입니다.</h2>
+            <div class="download_profile">
+                <p>Company Location</p>
+                <button onclick="window.open('https://naver.me/Ft8sqRX0')"></button>
             </div>
-
-            <!-- 메뉴바 -->
-            <ul class="navbar_menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="IT.html">IT</a></li>
-                <li><a href="CS.html">CS</a></li>
-            </ul>
-
-
-
-
-
-
-            <!-- sns 링크 -->
-            <!-- <ul class="navbar_links">
-            <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></li></a>
-            <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.instargram.com"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul> -->
-
-            <a class="navbar_toggleBtn">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-
-        </nav>
-    </header>
-    <div id="content-wrap">
-        <image class="imageMain" src="/images/testpage.jpg">
-        <image class="imageMain" src="/images/test2.jpg"></image>
+        </div>
     </div>
-    <footer>
-        <div class="company_profile">
-            <div>
-                <h2>테스트 입니다.<br>테스트 입니다.</h2>
-                <div class="download_profile">
-                    <p>company profile</p>
-                    <button
-                        onclick="window.open('https://www.saramin.co.kr/zf_user/company-info/view?csn=cE5zeU5vbTVqa1hzTFA0b3lOTDRRUT09')"></button>
+
+    <div class="footer_info_section">
+        <div>
+            <div class="footer_img">
+                <img src="/images/aboutLogo.png" class="footer_logo">
+                <p class="company_number pc_company_number pretendard">사업자 등록번호 : 395-87-02436<br>대표 : 홍길동</p>
+                <p class="company_number pc_company_number pretendard">Copyright © Incuvers 인큐버스 All Rights
+                    Reserved.</p>
+            </div>
+            <div class="footer_contact_info">
+                <div class="contact_detail">
+                    <span>E-mail</span>
+                    <p>test@test.io</p>
+                    <span>Telephone</span>
+                    <p>+82 000 000 0000</p>
+                    <!-- <span>Address</span> -->
+                    <p><span>대전 사무소</span>대전광역시 유성구 대덕대로 582, 옥토빌딩 3층 303호</p>
+                    <p><span>서울 사무소</span>서울특별시 강남구 도곡로 218, CNCITY tower 5층</p>
                 </div>
             </div>
         </div>
 
-        <div class="footer_info_section">
-            <div>
-                <div class="footer_img">
-                    <img src="/images/mysql.png" class="footer_logo">
-                    <p class="company_number pc_company_number pretendard">사업자 등록번호 : 395-87-02436<br>대표 : 홍길동</p>
-                    <p class="company_number pc_company_number pretendard">Copyright © Incuvers 인큐버스 All Rights
-                        Reserved.</p>
-                </div>
-                <div class="footer_contact_info">
-                    <div class="contact_detail">
-                        <span>E-mail</span>
-                        <p>test@test.io</p>
-                        <span>Telephone</span>
-                        <p>+82 000 000 0000</p>
-                        <!-- <span>Address</span> -->
-                        <p><span>대전 사무소</span>대전광역시 유성구 대덕대로 582, 옥토빌딩 3층 303호</p>
-                        <p><span>서울 사무소</span>서울특별시 강남구 도곡로 218, CNCITY tower 5층</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
+
 
 </html>
