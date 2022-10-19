@@ -38,7 +38,7 @@ a {
     justify-content: space-between;
     /* 수직 정렬 설정 */
     align-items: center;
-    background-color: var(--background-color);
+    /*background-color: var(--background-color);*/
     z-index: 10;
     height: 60px;
     position: fixed;

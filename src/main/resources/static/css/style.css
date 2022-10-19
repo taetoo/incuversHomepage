@@ -1,7 +1,8 @@
 :root {
     /* --text-color: #F04B24; */
     --text-color: black;
-    --background-color: rgb(255, 255, 255, 0.5);
+    /*--background-color: rgb(255, 255, 255, 0.5);*/
+    --background-color: white;
     --accent-color: #f2d8d8;
     --footer-color: darkgray;
     --hover-color: rgb(242, 216, 216, 0.5);
@@ -37,7 +38,7 @@ a {
     justify-content: space-between;
     /* 수직 정렬 설정 */
     align-items: center;
-    background-color: var(--background-color);
+    /*background-color: var(--background-color);*/
     z-index: 10;
     height: 60px;
     position: fixed;
