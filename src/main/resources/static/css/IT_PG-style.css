@@ -37,7 +37,7 @@ a {
     justify-content: space-between;
     /* 수직 정렬 설정 */
     align-items: center;
-    /*background-color: var(--background-color);*/
+    /* background-color: var(--background-color); */
     z-index: 10;
     height: 60px;
     position: fixed;
@@ -54,8 +54,8 @@ a {
     /* width: 150px; */
     justify-content: center;
     align-items: center;
-    
-  
+
+
 
 }
 .logo_image{
@@ -65,7 +65,7 @@ a {
 
     padding: 5px 10px;
 
-  
+
 
 }
 
@@ -138,6 +138,19 @@ a {
     width: 80%;
     background-color: var(--background-color);
 }
+.IT-PG-serve{
+    background-color:  #EDEDEE;
+}
+.imageServe{
+    padding-top: 20px;
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    background-color: #EDEDEE;
+}
+
+
+
 
 footer {
     display: block;
@@ -161,14 +174,14 @@ footer {
 
 .company_profile h2 {
     display: block;
-    font: 'NanumGothicBold';
+    font-family: 'NanumGothicLight';
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 
     font-weight: 300;
-    font-size: 42px;
+    font-size: 35px;
     line-height: 56px;
     color: #ffffff;
     letter-spacing: -0.02em;
@@ -200,9 +213,9 @@ footer {
 }
 
 .download_profile p {
-    font-family: 'capitana-semibold';
+    font-family: 'capitana-thin';
     font-weight: 300;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 38px;
     color: white;
 }
@@ -295,7 +308,7 @@ footer {
 
 
     } */
-  
+
     .navbar_menu {
         display: none;
         flex-direction: column;
