@@ -1,7 +1,7 @@
 :root {
     /* --text-color: #F04B24; */
     --text-color: #FFFFFF;
-    --background-color: #FF4713;;
+    --background-color: #FB4414;
 
 
     /* --backgroundNav-color: rgb(100, 28, 7, 0.3); */
@@ -134,13 +134,23 @@ a {
     background-color: var(--background-color);
 }
 .imageMain {
-    padding-top: 100px;
-    padding-bottom: 40px;
+    padding-top: 160px;
     margin: 0 auto;
     display: block;
     width: 80%;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     padding-bottom: 50px;
+}
+.team-serve{
+    background-color:  var(--background-color);
+}
+.imageServe{
+    padding-top: 20px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    /* background-color: ; */
 }
 
 

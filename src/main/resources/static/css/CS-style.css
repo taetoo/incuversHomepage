@@ -129,19 +129,14 @@ a {
     background-color: var(--background-color);
 }
 .imageMain {
-    padding-top: 100px;
+    padding-top: 71px;
     padding-bottom: 40px;
+    padding-left: 9px;
     margin: 0 auto;
     display: block;
     width: 80%;
     background-color: var(--background-color);
-    padding-bottom: 50px;
 }
-
-
-
-
-
 
 .div_test {
     font-size: 40px;
