@@ -4,7 +4,8 @@
     --background-color: rgb(255, 255, 255, 0.5);
     --accent-color: #f2d8d8;
     --footer-color: darkgray;
-    --hover-color: rgb(242, 216, 216, 0.5);
+    --hover-color: rgb(255, 175, 143, 0.4);
+    /* --hover-color: rgb(242, 216, 216, 0.5); */
 }
 
 body {
@@ -127,10 +128,22 @@ a {
 }
 
 
-.IT_PG-main {
+.IT_PG-top {
     background-color: var(--background-color);
 }
-.imageMain {
+.imageTop {
+    padding-top: 175px;
+    padding-bottom: 60px;
+    padding-left: 1px;
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    background-color: var(--background-color);
+}
+.IT_PG-middle {
+    background-color: var(--background-color);
+}
+.imageMiddle {
     padding-top: 70px;
     padding-bottom: 40px;
     padding-left: 6px;

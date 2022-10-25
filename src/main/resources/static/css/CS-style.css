@@ -1,10 +1,11 @@
 :root {
     /* --text-color: #F04B24; */
     --text-color: black;
-    /*--background-color: rgb(255, 255, 255, 0.5);*/
+    --background-color: rgb(255, 255, 255, 0.5);
     --accent-color: #f2d8d8;
     --footer-color: darkgray;
-    --hover-color: rgb(242, 216, 216, 0.5);
+    --hover-color: rgb(255, 175, 143, 0.4);
+    /* --hover-color: rgb(242, 216, 216, 0.5); */
 }
 
 body {
@@ -37,7 +38,7 @@ a {
     justify-content: space-between;
     /* 수직 정렬 설정 */
     align-items: center;
-    /*background-color: var(--background-color);*/
+    /* background-color: var(--background-color); */
     z-index: 10;
     height: 60px;
     position: fixed;
@@ -125,13 +126,25 @@ a {
 .navbar_toggleBtn :hover {
     color: var(--hover-color);
 }
-.CS-main {
+
+
+.CS_top {
     background-color: var(--background-color);
 }
-.imageMain {
-    padding-top: 71px;
+.imageTop {
+    padding-top: 190px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    background-color: var(--background-color);
+}
+.CS_bottom {
+    background-color: var(--background-color);
+}
+.imageBottom {
+    padding-top: 100px;
     padding-bottom: 40px;
-    padding-left: 9px;
     margin: 0 auto;
     display: block;
     width: 80%;
