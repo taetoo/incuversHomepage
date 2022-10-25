@@ -181,34 +181,38 @@ footer {
 }
 
 .company_profile button {
+    display: block;
     width: 72px;
     height: 72px;
     border-radius: 50%;
-    background-image: url('../images/click.png');
-    background-size: contain;
+    background-color: white;
+    background-image: url('../images/button_icon2.png');
+    background-size: cover;
     border: none;
     margin-left: 24px;
     cursor: pointer;
+
+    /* color:#333;
+    transition:all 0.9s, color 0.3;  */
 }
+.company_profile button:hover {
+    background-color: #2b2b2b;
 
-.download_profile {
-    display: flex;
-    align-items: center;
-
-}
-
-.download_profile p {
-    font-family: 'capitana-thin';
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 38px;
-    color: white;
 }
 
 .company_profile .download_profile {
     display: flex;
     align-items: center;
 }
+
+.download_profile p {
+    font-family: 'capitana-thin';
+    /* font-weight: 300; */
+    font-size: 28px;
+    line-height: 38px;
+    color: white;
+}
+
 
 .footer_info_section {
     padding: 72px 0;
