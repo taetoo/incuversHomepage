@@ -1,6 +1,6 @@
 :root {
     --text-color: #FFFFFF;
-    --background-color: #FB4414;
+    --background-color: #E7542E;
     --accent-color: #f2d8d8;
     --footer-color: darkgray;
     --hover-color: rgb(255, 175, 143, 0.4);
@@ -102,7 +102,7 @@ a {
     background-color:  var(--background-color);
 }
 .imageServe{
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 200px;
     margin: 0 auto;
     display: flex;
