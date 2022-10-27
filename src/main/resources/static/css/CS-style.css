@@ -1,11 +1,9 @@
 :root {
-    /* --text-color: #F04B24; */
     --text-color: black;
     --background-color: rgb(255, 255, 255, 0.5);
     --accent-color: #f2d8d8;
     --footer-color: darkgray;
     --hover-color: rgb(255, 175, 143, 0.4);
-    /* --hover-color: rgb(242, 216, 216, 0.5); */
 }
 
 body {
@@ -32,13 +30,9 @@ a {
 }
 
 .navbar {
-    /* 한줄에 나란히 설정 */
     display: flex;
-    /* 일정한 간격에 맞춰서 박스를 정렬 */
     justify-content: space-between;
-    /* 수직 정렬 설정 */
     align-items: center;
-    /* background-color: var(--background-color); */
     z-index: 10;
     height: 60px;
     position: fixed;
@@ -50,26 +44,15 @@ a {
     font-size: 24px;
     color: white;
     padding-left: 15px;
-    /* padding-top: 5px; */
     display: block;
-    /* width: 150px; */
     justify-content: center;
     align-items: center;
-
-
-
 }
 .logo_image{
     max-width: 100%;
     width: 130px;
-    /* height: 100%; */
-
     padding: 5px 10px;
-
-
-
 }
-
 .navbar_logo i {
     color: var(--accent-color);
 }
@@ -77,14 +60,12 @@ a {
 .navbar_menu {
     font-family: 'capitana-light';
     display: flex;
-    /* 리스트 앞에 불릿 없애기 */
     list-style: none;
     padding-left: 0;
     padding-right: 50px
 }
 
 .navbar_menu li {
-    /* 여기서 패딩으로 넣는 이유는 박스 안에 넣어서 클릭할 수 있는 영역이 커진다 */
     padding: 8px 25px;
 }
 
@@ -92,27 +73,6 @@ a {
     background-color: var(--hover-color);
     border-radius: 4px;
 }
-
-
-/* .navbar_links {
-    display: flex;
-    list-style: none;
-    color: var(--text-color);
-    padding-left: 0;
-
-}
-.navbar_links li {
-    padding: 8px 12px;
-
-}
-.navbar_links li:hover {
-    background-color: var(--accent-color);
-    border-radius: 4px;
-
-
-} */
-
-
 .navbar_toggleBtn {
     display: none;
     position: absolute;
@@ -160,22 +120,17 @@ a {
 
 footer {
     display: block;
-    /* footer를 aside위에 올리기 위해 사용(부유객체) */
-    /* position: absolute; */
     height: 100px;
     width: 100%;
-    /* padding: 0 25px; */
-    line-height: 30spx;
+    line-height: 30px;
     color: #8a8c8f;
-    /* border-top: 1px solid #dee5e7; */
-    /* background-color: darkgray; */
     bottom: 0;
 }
 
 .company_profile {
     width: 100%;
-    padding: 147px 0;
-    background-color: #404040;
+    padding: 27px 0;
+    background-color: #2b2b2b;
 }
 
 .company_profile h2 {
@@ -185,7 +140,6 @@ footer {
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-
     font-weight: 300;
     font-size: 35px;
     line-height: 56px;
@@ -212,9 +166,6 @@ footer {
     border: none;
     margin-left: 24px;
     cursor: pointer;
-
-    /* color:#333;
-    transition:all 0.9s, color 0.3;  */
 }
 .company_profile button:hover {
     background-color: #2b2b2b;
@@ -228,16 +179,14 @@ footer {
 
 .download_profile p {
     font-family: 'capitana-thin';
-    /* font-weight: 300; */
     font-size: 28px;
     line-height: 38px;
     color: white;
 }
 
-
 .footer_info_section {
-    padding: 72px 0;
-    background-color: #2b2b2b;
+    padding: 20px 0;
+    background-color: #404040;
     height: auto;
 }
 
@@ -254,9 +203,10 @@ footer {
 }
 
 .footer_logo {
-    width: 240px;
+    width: 180px;
     display: block;
-    margin-bottom: 70px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .company_number {
@@ -281,7 +231,7 @@ footer {
     line-height: 14px;
     letter-spacing: -0.01em;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .contact_detail p,
@@ -294,13 +244,13 @@ footer {
     line-height: 19px;
 }
 
+@media screen and (max-width: 413px){
+    .footer_info_section > div,
+    .company_profile > div {
+        max-width: calc(100% - 44px);
+    }
+}
 
-
-
-
-
-
-/* 반응형 */
 @media screen and (max-width: 758px) {
     .navbar {
         display: flex;
@@ -308,18 +258,6 @@ footer {
         align-items: flex-start;
         height: 50px;
     }
-
-    /* .navbar_logo img {
-        font-size: 24px;
-        font-weight: 50;
-        padding-top: 0px;
-        display: block;
-        justify-content: center;
-        align-items: center;
-
-
-    } */
-
     .navbar_menu {
         display: none;
         flex-direction: column;
@@ -331,13 +269,6 @@ footer {
         width: 100%;
         text-align: center;
     }
-
-    /* .navbar_links {
-        display: none;
-        justify-content: center;
-        width: 100%;
-    } */
-
     .navbar_toggleBtn {
         display: flex;
     }
@@ -346,25 +277,58 @@ footer {
     .navbar_links.active {
         display: flex;
     }
-
-    /* .imageMain {
-        justify-content: center;
-        width: 100%;
-    } */
-
     .company_profile {
-        padding: 53px;
+        padding: 53px 0;
+    }
+    .company_profile h2 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 40px;
+    }
+    .company_profile p {
+        font-size: 16px;
+    }
+    .company_profile > div {
+        display: block;
     }
 
     .footer_info_section {
-        padding: 53px;
-        width: 100%;
+        padding: 76px 0 104px;
+    }
+
+    .footer_logo {
+        width: 126px;
+        margin-bottom: 42px;
+    }
+
+    .footer_contact_info {
+        display: block;
+    }
+
+
+    .footer_info_section > div {
+        align-items: flex-start;
+        flex-direction: column;
     }
 }
 
-/* 폰트 */
+@media screen and (max-width: 1024px) {
+    .company_profile {
+        padding: 157px 0;
+    }
+    .footer_info_section > div,
+    .company_profile > div {
+        max-width: calc(100% - 96px);
+    }
+    .company_profile button {
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+    }
 
-/* 한글 폰트 */
+}
+
+
 @font-face {
     font-family: nanum-gothic;
     src: url("../fonts/nanum-gothic/NanumGothic.otf");
@@ -389,7 +353,6 @@ footer {
     unicode-range: U+AC00-D7A3;
 }
 
-/* 영어 폰트 */
 @font-face {
     font-family: capitana-bold;
     src: url("../fonts/capitana-fonts/Fontspring-DEMO-capitana-bold.otf");
