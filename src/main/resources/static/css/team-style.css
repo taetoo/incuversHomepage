@@ -92,23 +92,22 @@ a {
     background-color: var(--background-color);
 }
 .imageMain {
-    padding-top: 105px;
+    padding-top: 183px;
+    padding-left: 2px;
     margin: 0 auto;
     display: block;
     width: 80%;
-    padding-bottom: 50px;
 }
 .team-serve{
     background-color:  var(--background-color);
 }
 .imageServe{
-    padding-top: 75px;
+    padding-top: 190px;
     padding-bottom: 200px;
     margin: 0 auto;
     display: flex;
     width: 80%;
 }
-
 
 footer {
     display: block;

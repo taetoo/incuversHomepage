@@ -86,36 +86,27 @@ a {
 .navbar_toggleBtn :hover {
     color: var(--hover-color);
 }
-
-
 .CS_top {
     background-color: var(--background-color);
 }
 .imageTop {
-    padding-top: 189px;
+    padding-top: 196px;
     padding-bottom: 70px;
     margin: 0 auto;
     display: block;
-    width: 80%;
+    width: 79%;
     background-color: var(--background-color);
 }
 .CS_bottom {
     background-color: var(--background-color);
 }
 .imageBottom {
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: 40px;
     margin: 0 auto;
     display: block;
     width: 80%;
     background-color: var(--background-color);
-}
-
-.div_test {
-    font-size: 40px;
-    color: black;
-    text-align: center;
-    padding-top: 300px;
 }
 
 footer {

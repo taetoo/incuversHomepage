@@ -86,15 +86,12 @@ a {
 .navbar_toggleBtn :hover {
     color: var(--hover-color);
 }
-
-
 .IT_PG-top {
     background-color: var(--background-color);
 }
 .imageTop {
-    padding-top: 175px;
-    padding-bottom: 60px;
-    padding-left: 1px;
+    padding-top: 190px;
+    padding-bottom: 70px;
     margin: 0 auto;
     display: block;
     width: 80%;
@@ -104,7 +101,7 @@ a {
     background-color: var(--background-color);
 }
 .imageMiddle {
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 40px;
     padding-left: 6px;
     margin: 0 auto;
@@ -122,9 +119,6 @@ a {
     width: 90%;
     background-color: #EDEDEE;
 }
-
-
-
 
 footer {
     display: block;

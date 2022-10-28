@@ -88,12 +88,12 @@ a {
 .navbar_toggleBtn :hover {
     color: var(--hover-color);
 }
-
 .about-top{
     background-color: var(--background-color);
 }
 .imageTop {
-    padding-top: 175px;
+    padding-top: 180px;
+    padding-left: 2px;
     margin: 0 auto;
     display: block;
     width: 80%;
@@ -103,6 +103,7 @@ a {
     background-color: var(--background-color);
 }
 .imageMiddle {
+    padding-top: 100px;
     padding-bottom: 100px;
     margin: 0 auto;
     display: block;
@@ -113,7 +114,7 @@ a {
     background-color: var(--background-color);
 }
 .imageBottom {
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     margin: 0 auto;
     display: block;
     width: 80%;
@@ -132,6 +133,7 @@ a {
     width: 90%;
     background-color: white;
 }
+
 footer {
     display: block;
     height: 100px;
